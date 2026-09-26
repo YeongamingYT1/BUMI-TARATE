@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bumi Tarate - Event Space & Wedding Venue Bandung</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#f4f6f4',
+                            100: '#e5ebe5',
+                            200: '#cbd7cb',
+                            300: '#a7bda8',
+                            400: '#849f86',
+                            500: '#648267',
+                            600: '#4e6750',
+                            700: '#405242',
+                            800: '#354337',
+                            900: '#2c372e',
+                        },
+                        gold: {
+                            light: '#e8d5a5',
+                            DEFAULT: '#C6A87C',
+                            dark: '#a38456'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+        }
+        .image-hover-zoom:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-sage-50 antialiased selection:bg-sage-200 selection:text-sage-900">
+
+    <nav class="fixed w-full z-50 glass-nav border-b border-sage-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <span class="font-serif text-2xl font-bold text-sage-800 tracking-widest">BUMI TARATE</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-sage-600 transition-colors duration-200 uppercase text-sm tracking-wider font-medium">Tentang</a>
+                    <a href="#venue" class="text-gray-600 hover:text-sage-600 transition-colors duration-200 uppercase text-sm tracking-wider font-medium">Venue</a>
+                    <a href="#gallery" class="text-gray-600 hover:text-sage-600 transition-colors duration-200 uppercase text-sm tracking-wider font-medium">Galeri</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-sage-600 transition-colors duration-200 uppercase text-sm tracking-wider font-medium">Ulasan</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="https://wa.me/6281122807700" target="_blank" class="bg-sage-600 text-white px-6 py-2 rounded-none hover:bg-sage-700 transition-colors duration-300 font-medium tracking-wide">Hubungi Kami</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-sage-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative h-screen flex items-center justify-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 w-full h-full">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Bumi Tarate Wedding Garden" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <p class="text-gold font-medium tracking-[0.3em] uppercase mb-4 drop-shadow-md">Event Space | Est. 2025</p>
+            <h1 class="text-5xl md:text-7xl font-serif text-white mb-6 drop-shadow-lg">BUMI TARATE</h1>
+            <p class="text-lg md:text-xl text-white/90 mb-10 font-light max-w-2xl mx-auto drop-shadow-md">
+                Wujudkan pernikahan impian Anda di venue semi-outdoor terbaik dengan nuansa alam yang asri, hijau, dan estetik di jantung Bandung.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/6281122807700" target="_blank" class="px-8 py-3 bg-sage-600 text-white hover:bg-sage-700 transition-all duration-300 font-medium tracking-wide shadow-lg">
+                    Konsultasi via WhatsApp
+                </a>
+                <a href="#venue" class="px-8 py-3 bg-transparent border border-white text-white hover:bg-white hover:text-sage-800 transition-all duration-300 font-medium tracking-wide">
+                    Lihat Venue
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <!-- Text Content -->
+                <div class="md:w-1/2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-gold text-xl">★★★★★</span>
+                        <span class="font-medium text-gray-700">5.0 <span class="font-normal text-gray-500">(50 Ulasan di Google)</span></span>
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-serif text-sage-900 mb-6">Harmoni Cinta & Alam</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Bumi Tarate adalah venue pernikahan dan event space berkonsep estetik yang memadukan keindahan alam terbuka dengan fasilitas modern. Diperkenalkan pada tahun 2025, kami menawarkan area hijau yang asri dan pepohonan besar yang meneduhkan, menciptakan suasana romantis yang tak terlupakan.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        <strong>Lokasi Sangat Strategis:</strong> Hanya berjarak 10 menit dari pintu Tol Buah Batu, memudahkan akses bagi keluarga dan tamu undangan Anda dari dalam maupun luar kota Bandung.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 pt-6 border-t border-sage-100">
+                        <div>
+                            <h4 class="font-serif text-sage-800 text-xl mb-2">Parkir Luas</h4>
+                            <p class="text-sm text-gray-500">Kapasitas parkir memadai dengan jalur loading & drop off terencana.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-serif text-sage-800 text-xl mb-2">Fasilitas Bersih</h4>
+                            <p class="text-sm text-gray-500">Toilet & Mushola yang sangat bersih dan wangi untuk kenyamanan tamu.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image Content -->
+                <div class="md:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Suasana Asri Bumi Tarate" class="w-full h-[500px] object-cover shadow-2xl rounded-tl-[80px] rounded-br-[80px]">
+                    <div class="absolute -bottom-8 -left-8 w-48 h-48 bg-sage-200 -z-10 rounded-tl-[60px] rounded-br-[60px]"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="venue" class="py-24 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-serif text-sage-900 mb-4">Area Venue Kami</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Ruang eksklusif yang dirancang untuk merayakan momen spesial Anda dengan latar belakang alam yang memukau.</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Floating Bridge -->
+                <div class="group bg-white overflow-hidden shadow-lg image-hover-zoom cursor-pointer rounded-t-full">
+                    <div class="h-[400px] overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Floating Bridge" class="w-full h-full object-cover transition-transform duration-700">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="font-serif text-2xl text-sage-800 mb-2">Floating Bridge</h3>
+                        <p class="text-gray-500 text-sm">Ikon estetik Bumi Tarate yang sempurna untuk sesi foto atau prosesi entrance yang dramatis melintasi danau buatan.</p>
+                    </div>
+                </div>
+
+                <!-- Garden -->
+                <div class="group bg-white overflow-hidden shadow-lg image-hover-zoom cursor-pointer rounded-t-full mt-0 md:mt-12">
+                    <div class="h-[400px] overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Garden" class="w-full h-full object-cover transition-transform duration-700">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="font-serif text-2xl text-sage-800 mb-2">Garden</h3>
+                        <p class="text-gold font-medium text-xs tracking-widest uppercase mb-3">Outdoor Ground | Hall</p>
+                        <p class="text-gray-500 text-sm">Taman hijau rimbun yang luas. Ideal untuk konsep akad nikah atau resepsi outdoor yang menyatu dengan alam.</p>
+                    </div>
+                </div>
+
+                <!-- Plaza -->
+                <div class="group bg-white overflow-hidden shadow-lg image-hover-zoom cursor-pointer rounded-t-full">
+                    <div class="h-[400px] overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Plaza" class="w-full h-full object-cover transition-transform duration-700">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="font-serif text-2xl text-sage-800 mb-2">Plaza</h3>
+                        <p class="text-gold font-medium text-xs tracking-widest uppercase mb-3">Ballroom | Hall | Outdoor Terrace</p>
+                        <p class="text-gray-500 text-sm">Area serbaguna dengan kapasitas besar. Menyediakan ruang semi-indoor yang elegan untuk perayaan mewah.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-serif text-sage-900 mb-4">Galeri Momen</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-8">Kumpulan inspirasi visual dan sudut estetik venue kami yang siap mengabadikan memori terindah Anda.</p>
+            <a href="https://instagram.com/bumitarate" target="_blank" class="inline-flex items-center text-sage-600 hover:text-sage-800 font-medium">
+                Lihat lebih banyak di Instagram @bumitarate 
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+                <!-- Large Image (Span 2 rows, 2 cols) -->
+                <div class="col-span-2 row-span-2 relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1510076857177-7470076d4098?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wedding Detail" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                </div>
+                <!-- Regular images -->
+                <div class="relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Wedding Floral" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                </div>
+                <div class="relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Outdoor Setup" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                </div>
+                <div class="relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Aesthetic Decor" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                </div>
+                <div class="relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Nature Details" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                </div>
+                <!-- Span 2 cols -->
+                <div class="col-span-2 relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Evening Setup" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                </div>
+                <!-- Single -->
+                <div class="col-span-2 md:col-span-1 relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Greenery" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                </div>
+                <div class="col-span-2 md:col-span-1 relative overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Lake Bridge" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-24 bg-sage-800 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif text-white mb-4">Kata Mereka</h2>
+                <div class="flex justify-center items-center gap-1">
+                    <span class="text-gold text-2xl">★</span>
+                    <span class="text-gold text-2xl">★</span>
+                    <span class="text-gold text-2xl">★</span>
+                    <span class="text-gold text-2xl">★</span>
+                    <span class="text-gold text-2xl">★</span>
+                </div>
+                <p class="text-sage-200 mt-2">Rating 5.0 berdasarkan 50 ulasan di Google</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-sage-700 p-8 rounded-tr-3xl rounded-bl-3xl border border-sage-600 relative">
+                    <div class="text-gold text-4xl font-serif absolute -top-4 -left-2">"</div>
+                    <p class="text-sage-100 italic mb-6 relative z-10 leading-relaxed">
+                        Venue Wedding semi outdoor terbaik dan terbersih ... keren banyak view pohon besar, taman yang cantik.. tempat estetik banget. Area, toilet & mushola nya bersih banget dan wangi... petugas kebersihannya ramah dan sopan, pokonya keren bumi tarate.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-sage-500 rounded-full flex items-center justify-center font-bold">RS</div>
+                        <div>
+                            <h4 class="font-medium text-white">Risa Sopwatunisa</h4>
+                            <p class="text-xs text-sage-300">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-sage-700 p-8 rounded-tr-3xl rounded-bl-3xl border border-sage-600 relative">
+                    <div class="text-gold text-4xl font-serif absolute -top-4 -left-2">"</div>
+                    <p class="text-sage-100 italic mb-6 relative z-10 leading-relaxed">
+                        Tempat Wedding Outdoor baru yang akan buka di bulan april tahun ini merupakan salah satu wedding venue outdoor terbesar untuk saat ini... Venue baru, asri hijau, hanya 10 menit dari tol Buah batu.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-sage-500 rounded-full flex items-center justify-center font-bold">AR</div>
+                        <div>
+                            <h4 class="font-medium text-white">Aa Rahmana</h4>
+                            <p class="text-xs text-sage-300">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-sage-700 p-8 rounded-tr-3xl rounded-bl-3xl border border-sage-600 relative">
+                    <div class="text-gold text-4xl font-serif absolute -top-4 -left-2">"</div>
+                    <p class="text-sage-100 italic mb-6 relative z-10 leading-relaxed">
+                        Tempat wedding outdoor terbesar di Bandung, dekat dengan pintu tol Buah Batu, sangat strategis. Tempat parkir luas, jalur loading dan drop off nya juga beneran dipikirin.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-sage-500 rounded-full flex items-center justify-center font-bold">GJ</div>
+                        <div>
+                            <h4 class="font-medium text-white">Gabriel Jordy Adryan</h4>
+                            <p class="text-xs text-sage-300">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-sage-900 text-white pt-20 pb-10 border-t border-sage-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <!-- Brand Info -->
+                <div class="lg:col-span-1">
+                    <h2 class="font-serif text-3xl mb-4 tracking-widest text-gold">BUMI TARATE</h2>
+                    <p class="text-sage-200 text-sm leading-relaxed mb-6">
+                        Event Space & Wedding Venue estetik di Bandung. Mewujudkan momen indah Anda dengan harmoni alam dan elegan.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://instagram.com/bumitarate" target="_blank" class="w-10 h-10 rounded-full bg-sage-800 flex items-center justify-center hover:bg-gold hover:text-white transition-colors duration-300">
+                            <!-- IG Icon -->
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact & Info -->
+                <div class="lg:col-span-1">
+                    <h4 class="font-serif text-lg mb-4 text-white">Hubungi Kami</h4>
+                    <ul class="space-y-3 text-sm text-sage-200">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 flex-shrink-0 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <span>0811-2280-7700 (WA)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 flex-shrink-0 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Buka hingga pukul 17.00</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 flex-shrink-0 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                            <a href="https://linktr.ee/bumitarate" target="_blank" class="hover:text-white transition-colors">linktr.ee/bumitarate</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Address & Map -->
+                <div class="lg:col-span-2">
+                    <h4 class="font-serif text-lg mb-4 text-white">Lokasi</h4>
+                    <div class="flex items-start gap-3 text-sm text-sage-200 mb-4">
+                        <svg class="w-5 h-5 flex-shrink-0 text-gold mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <p>Jl. Raya Bojongsoang No.71, Bojongsoang, Kec. Buahbatu, Kabupaten Bandung, Jawa Barat 40288</p>
+                    </div>
+                    <!-- Minimalistic embedded map placeholder -->
+                    <div class="w-full h-40 bg-sage-800 rounded-lg overflow-hidden border border-sage-700 opacity-80 hover:opacity-100 transition-opacity duration-300">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.33443315626!2d107.6329432!3d-6.9698421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e967a1da96cf%3A0xc6ed7db642284c47!2sBUMI%20TARATE!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 border-t border-sage-800 text-center text-sage-400 text-sm">
+                <p>&copy; 2026 Bumi Tarate Event Space. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
